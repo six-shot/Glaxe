@@ -2,7 +2,6 @@
 import Image from "next/image";
 import heroBg from "../../public/nHwTsLPGkmoINM0pwwdsOWuyhaE.jpg";
 import { HeroHeader } from "./navbar";
-import DynamicBackground from "./DynamicBackground";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
