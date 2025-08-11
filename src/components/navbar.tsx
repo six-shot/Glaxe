@@ -71,7 +71,7 @@ export const HeroHeader = () => {
                     </div>
                   </button>
                 </div>
-                <div className="hidden lg:flex bg-[#000000] h-[42px] px-5 items-center rounded-[100px] lg:justify-self-center">
+                <div className="hidden lg:flex bg-[#000000] h-[42px] px-[21px] items-center rounded-[100px] lg:justify-self-center">
                   <ul className="flex gap-10 text-sm">
                     {menuItems.map((item, index) => (
                       <li key={index}>
