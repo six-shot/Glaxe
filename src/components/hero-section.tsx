@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div className="relative h-screen w-full flex flex-col items-center justify-center ">
+    <div className="relative h-screen w-full flex flex-col items-center justify-center">
       <div
         className="framer-s35tte"
         data-framer-name="Hero"
@@ -21,6 +21,7 @@ export default function HeroSection() {
           width: "100%",
         }}
       >
+        {/* Background Image */}
         <div
           data-framer-background-image-wrapper="true"
           style={{ position: "absolute", borderRadius: "inherit", inset: 0 }}
@@ -44,16 +45,18 @@ export default function HeroSection() {
           />
         </div>
 
+        {/* Grain Effect Overlay */}
         <div
           style={{
             position: "absolute",
-            borderRadius: "inherit",
             inset: 0,
-            backgroundImage: 'url("/mask.png")',
+            borderRadius: "inherit",
+            backgroundImage: "url('/11.png')",
             backgroundRepeat: "repeat",
-            backgroundPosition: "center",
-            border: 0,
-            backgroundSize: "171.5px auto",
+            backgroundSize: "cover",
+            pointerEvents: "none",
+            opacity: 0.6,
+            mixBlendMode: "soft-light",
           }}
         />
 
@@ -146,3 +149,4 @@ export default function HeroSection() {
     </div>
   );
 }
+
